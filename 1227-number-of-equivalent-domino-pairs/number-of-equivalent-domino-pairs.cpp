@@ -6,9 +6,9 @@ public:
 
         for (auto& d : dominoes) {
             int a = d[0], b = d[1];
-            if (a > b) swap(a, b);  // normalize to (small, large)
+            if (a > b) swap(a, b);  
             int key = a * 10 + b;
-            result += count[key];  // count existing same dominoes
+            result += count[key];  
             count[key]++;
         }
 
